@@ -31,6 +31,8 @@
                 <li><a href="#overview" class="active"><i class="fas fa-home" aria-hidden="true"></i> Overview</a></li>
                 <li><a href="#anatomy"><i class="fas fa-lungs" aria-hidden="true"></i> Anatomy</a></li>
                 <li><a href="#process"><i class="fas fa-wind" aria-hidden="true"></i> Breathing Process</a></li>
+                <li><a href="#diseases"><i class="fas fa-medkit" aria-hidden="true"></i> Diseases</a></li>
+                <li><a href="#presentation"><i class="fas fa-file-pdf" aria-hidden="true"></i> Presentation</a></li>
                 <li><a href="#quiz"><i class="fas fa-question-circle" aria-hidden="true"></i> Quiz</a></li>
                 <li><a href="#resources"><i class="fas fa-book" aria-hidden="true"></i> Resources</a></li>
             </ul>
@@ -89,14 +91,6 @@
                     <area shape="circle" coords="350,400,20" alt="Alveoli" title="Alveoli" data-info="alveoli">
                     <area shape="rect" coords="150,350,250,400" alt="Diaphragm" title="Diaphragm" data-info="diaphragm">
                 </map>
-                
-                <div class="anatomy-info" id="anatomyInfo">
-                    <h3 id="partTitle">Click on a part to learn more</h3>
-                    <p id="partDescription">Select any highlighted area in the diagram to see detailed information about that part of the respiratory system.</p>
-                    <div class="part-fun-fact" id="partFunFact"></div>
-                    <div class="part-functions" id="partFunctions"></div>
-                    <div class="part-medical" id="partMedical"></div>
-                </div>
             </div>
         </section>
 
@@ -188,6 +182,75 @@
             </div>
         </section>
 
+        <!-- Respiratory Diseases Section -->
+        <section id="diseases" class="content-section">
+            <h2>Common Respiratory Diseases</h2>
+            
+            <div class="disease-list">
+                <div class="disease-item">
+                    <h3><i class="fas fa-lungs" aria-hidden="true"></i> Asthma</h3>
+                    <div class="disease-image">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/244/384/small_2x/asthma-diagram-with-normal-lung-and-asthmatic-lung-free-vector.jpg" alt="Asthma image">
+                    </div>
+                    <p>Asthma is a chronic disease that inflames and narrows the airways, causing difficulty breathing, wheezing, and shortness of breath. Asthma can be triggered by allergens, cold air, exercise, or stress.</p>
+                </div>
+        
+                <div class="disease-item">
+                    <h3><i class="fas fa-lungs" aria-hidden="true"></i> Chronic Obstructive Pulmonary Disease (COPD)</h3>
+                    <div class="disease-image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5e9e7873f15ec443bd66cd3c/1601241609055-VABM12M4GGLWCCSJXUP9/Healthy+vs+COPD+lungs+960px.jpg" alt="COPD image">
+                    </div>
+                    <p>COPD is a group of lung diseases that block airflow and make breathing difficult. It includes conditions like emphysema and chronic bronchitis. Smoking is the leading cause of COPD.</p>
+                </div>
+
+                <div class="disease-item">
+                    <h3><i class="fas fa-lungs" aria-hidden="true"></i> Pneumonia</h3>
+                    <div class="disease-image">
+                        <img src="https://images.nursinganswers.net/collections/pneumonia.jpg" alt="Pneumonia image">
+                    </div>
+                    <p>Pneumonia is an infection that inflames the air sacs in one or both lungs, causing them to fill with fluid or pus. It can be caused by bacteria, viruses, or fungi.</p>
+                </div>
+
+                <div class="disease-item">
+                    <h3><i class="fas fa-lungs" aria-hidden="true"></i> Tuberculosis (TB)</h3>
+                    <div class="disease-image">
+                        <img src="https://cdn.educba.com/academy/wp-content/uploads/2024/08/Tuberculosis.jpg" alt="TB image">
+                    </div>
+                    <p>Tuberculosis is a contagious bacterial infection that primarily affects the lungs but can also affect other parts of the body. It is caused by the bacterium Mycobacterium tuberculosis.</p>
+                </div>
+
+                <div class="disease-item">
+                    <h3><i class="fas fa-lungs" aria-hidden="true"></i> Lung Cancer</h3>
+                    <div class="disease-image">
+                        <img src="https://cdn.yoo.rs/uploads/176231/photos/1637304636-Signs-and-symptoms-of-lung-cancer.jpg" alt="Cancer image">
+                    </div>
+                    <p>Lung cancer is a type of cancer that begins in the lungs. Smoking is the leading cause, but exposure to secondhand smoke, pollution, and radon can also increase risk.</p>
+                </div>
+            </div>
+
+            <div class="disease-resources">
+                <h3>Further Reading</h3>
+                <ul>
+                    <li><a href="https://www.cdc.gov/nchs/fastats/asthma.htm" target="_blank" rel="noopener noreferrer">CDC: Asthma Overview</a></li>
+                    <li><a href="https://www.nhlbi.nih.gov/health-topics/copd" target="_blank" rel="noopener noreferrer">National Heart, Lung, and Blood Institute: COPD</a></li>
+                    <li><a href="https://www.cdc.gov/pneumonia/index.html" target="_blank" rel="noopener noreferrer">CDC: Pneumonia</a></li>
+                    <li><a href="https://www.cdc.gov/tb/about/?CDC_AAref_Val=https://www.cdc.gov/tb/topic/basics/default.htm" target="_blank" rel="noopener noreferrer">CDC: Tuberculosis</a></li>
+                    <li><a href="https://www.cancer.org/cancer/lung-cancer.html" target="_blank" rel="noopener noreferrer">American Cancer Society: Lung Cancer</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Embedding PowerPoint as PDF -->
+        <section id="presentation" class="content-section">
+            <h2>Respiratory System - Diseases Overview</h2>
+            <div class="presentation-content">
+                <embed src="assets/file/slide.pdf" 
+                type="application/pdf" 
+                width="100%" 
+                height="600px">
+            </div>
+        </section>
+
         <!-- Quiz Section -->
         <section id="quiz" class="content-section">
             <h2>Test Your Knowledge</h2>
@@ -197,6 +260,18 @@
                 <div class="quiz-options" id="quizOptions" role="radiogroup" aria-labelledby="quizQuestion"></div>
                 <button class="interactive-btn" id="nextQuestionBtn" disabled>Next Question</button>
                 <div id="quizResult" role="status" aria-live="polite"></div>
+            </div>
+
+            <div class="quiz-container">
+                <h3>Extra Quizzes:</h3>
+                <div class="quiz-links">
+                    <a href="https://www.purposegames.com/game/YdkvaGPkzTI" target="_blank" rel="noopener noreferrer" class="quiz-link">
+                        Quiz for Naming Respiratory System Structures
+                    </a>
+                    <a href="https://www.purposegames.com/game/human-respiratory-system-its-related-disorders" target="_blank" rel="noopener noreferrer" class="quiz-link">
+                        Quiz for Respiratory Diseases
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -210,6 +285,7 @@
                     <ul>
                         <li><a href="https://www.innerbody.com/anatomy/respiratory" target="_blank" rel="noopener noreferrer">InnerBody - Respiratory System</a></li>
                         <li><a href="https://www.getbodysmart.com/respiratory-system" target="_blank" rel="noopener noreferrer">GetBodySmart</a></li>
+                        <li><a href="https://www.healthline.com/health/common-respiratory-diseases#common-respiratory-diseases" target="_blank" rel="noopener noreferrer">Respiratory Diseases</a></li>
                     </ul>
                 </div>
                 <div class="resource-card">
@@ -222,6 +298,8 @@
                 </div>
             </div>
         </section>
+
+
     </main>
 
     <!-- Footer -->

@@ -118,6 +118,8 @@ nav a.active i {
 nav a[href="#overview"] { border-left: 3px solid #3498db; }
 nav a[href="#anatomy"] { border-left: 3px solid #e74c3c; }
 nav a[href="#process"] { border-left: 3px solid #2ecc71; }
+nav a[href="#diseases"] { border-left: 3px solid #d1f312; }
+nav a[href="#presentation"] { border-left: 3px solid #fa31d5; }
 nav a[href="#quiz"] { border-left: 3px solid #f39c12; }
 nav a[href="#resources"] { border-left: 3px solid #9b59b6; }
 
