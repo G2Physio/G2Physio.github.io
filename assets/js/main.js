@@ -349,3 +349,33 @@ window.RespiratorySystemApp = app;
 
 // Export for module usage
 export default app;
+
+// Add smooth scroll behavior for navigation
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('nav .container');
+    let isScrolling = false;
+    let startX;
+    let scrollLeft;
+
+    nav.addEventListener('mousedown', (e) => {
+        isScrolling = true;
+        startX = e.pageX - nav.offsetLeft;
+        scrollLeft = nav.scrollLeft;
+    });
+
+    nav.addEventListener('mouseleave', () => {
+        isScrolling = false;
+    });
+
+    nav.addEventListener('mouseup', () => {
+        isScrolling = false;
+    });
+
+    nav.addEventListener('mousemove', (e) => {
+        if (!isScrolling) return;
+        e.preventDefault();
+        const x = e.pageX - nav.offsetLeft;
+        const walk = (x - startX) * 2;
+        nav.scrollLeft = scrollLeft - walk;
+    });
+});
