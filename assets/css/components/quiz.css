@@ -302,28 +302,3 @@
         gap: 1rem;
     }
 }
-
-.quiz-link {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: #5ddca7;
-    color: white;
-    text-decoration: none;
-    border-radius: 0.7rem;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 1.2rem;
-}
-
-.quiz-link:hover {
-    background-color: #c4397c;
-    transform: scale(1.05);
-}
-
-@media (max-width: 600px) {
-    .quiz-link {
-        width: 100%;
-        padding: 12px 20px;
-    }
-}
